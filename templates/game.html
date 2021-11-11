@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block contents%}
+<section>
+    <span id="high-score">
+        <p class="text"> High Score </p>
+        <p id="high-score-value" class="text"> {{highScore}} </p>
+    </span>
+    <span id="timer" class="center"></span>
+    <span id="score">
+        <p class="text"> Score </p>
+        <p id="score-value" class="text"> 0 </p>
+    </span>
+</section>
+<section>
+    <table id="board" class="center">
+        <tbody>
+            {% for col in range(cols) %}
+            <tr>
+                {% for row in range(rows) %}
+                <td class="char">{{board[row][col]}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <div id="guess-word-div">
+        <form id="guess-word-form" class="center">
+            <label for="word">What's your word?</label>
+            <input id="word" type="text" placeholder="Guess?" minlength="3" required>
+            <button id="submit-word">Submit</button>
+        </form>
+    </div>
+    <div>
+        <table>
+            <thead> Used words:</thead>
+            <tbody id="used-words"></tbody>
+        </table>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts%}
+<script src="/static/boggle.js"></script>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block contents%}
+<h1 id="end-msg" class="center text">GAME OVER</h1>
+<h2 class="center text">
+    {% if high %} 
+    Congratulations! You got a new high score!  
+    {% else %} 
+    Sorry, you did not beat the high score.
+    {% endif %}
+</h2>
+{% endblock %}

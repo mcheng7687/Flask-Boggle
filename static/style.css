@@ -1,0 +1,78 @@
+td.char {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #666;
+    border-radius: 25%;
+    text-align: center;
+    font-size: 40px;
+    background-color: ghostwhite;
+}
+
+body {
+    width: 98%;
+    background-color:khaki;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+/* #board {
+    margin-right: auto;
+    margin-left: auto;
+} */
+
+#logo {
+    display: block;
+}
+
+#timer {
+    width: 33%;
+    display: inline-block;
+    font-size: 100px;
+    text-align: center;
+}
+
+#guess-word-form {
+    display: inline-block;
+    text-align: left;
+}
+
+#guess-word-div {
+    text-align: center;
+}
+
+.text{
+    margin: 0;
+}
+
+#score {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    font-size: 25px;
+    width: 33%;
+    height: 40px;
+}
+
+#score-value {
+    font-size: 50px;
+}
+
+#high-score {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    font-size: 25px;
+    width: 33%;
+}
+
+#high-score-value {
+    font-size: 50px;
+}
+
+#start {
+    display: block;
+}

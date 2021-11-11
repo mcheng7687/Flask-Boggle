@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <title>BOGGLE</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<nav>
+    <a href="/new-game" id="new-game">New Game</a>
+    <a href="/reset" id="reset">Reset High Score</a>
+</nav>
+<body>
+    <img id="logo" class="center"
+        src="https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/AsV3CPSmAizMGpG4VUH31/e010fd6d7c633ace9cdebbfb9c83bcd7/BOG-Logo.png">
+    {% block contents %}
+    {% endblock %}
+</body>
+
+<script src="http://unpkg.com/jquery"></script>
+<script src="http://unpkg.com/axios/dist/axios.js"></script>
+{% block scripts %}
+{% endblock %}
